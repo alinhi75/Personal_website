@@ -1,11 +1,11 @@
 <template>
     <div>
-        <h2>My Projects</h2>
+        <h2 class="text-2xl font-semibold">My Projects</h2>
         <ul v-if="projects.length">
             <li v-for="project in projects" :key="project.id">
-                <h3>{{ project.title }}</h3>
+                <h3 class="font-bold">{{ project.title }}</h3>
                 <p>{{ project.description }}</p>
-                <a :href="project.link" target="_blank" v-if="project.link">View Project</a>
+                <a :href="project.link" target="_blank" class="text-blue-500">View Project</a>
             </li>
         </ul>
     </div>
