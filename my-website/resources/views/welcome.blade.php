@@ -10,6 +10,9 @@
     <div id="app">
         <home></home>
         <about id="about"></about>
+        <education id="education"></education>
+        <research id="research"></research>
+        <contact id="contact"></contact>
     </div>
 </body>
 </html>
