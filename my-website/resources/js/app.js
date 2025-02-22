@@ -2,10 +2,14 @@ import './bootstrap';
 import { createApp } from 'vue';
 import App from  './component/App.vue';
 import Projects from './component/Projects.vue';
-
+import Home from './component/Home.vue';
+import About from './component/About.vue';
+import Research from './component/Research.vue';
+import tailwindConfig from '../../tailwind.config';
 const app = createApp({});
 app.component('home', Home);
+app.component('about', About);
 app.component('projects', Projects);
 app.component('research', Research);
-app.component('contact', Contact);
-createApp(App).mount('#app');
+// app.component('contact', Contact);
+app.mount('#app');
