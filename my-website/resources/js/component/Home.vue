@@ -1,12 +1,98 @@
 <template>
-    <div class="text-center mt-10">
-        <h1 class="text-4xl font-bold">Welcome to My Website</h1>
-        <p class="text-lg mt-4">I'm a Master's Student in Computer Engineering and a Developer.</p>
-    </div>
-</template>
+    <div class="bg-gray-900 text-white min-h-screen">
 
-<script>
-export default {
-    name: 'Home'
-}
-</script>
+      <!-- Hero Section -->
+      <section class="flex flex-col items-center justify-center h-screen text-center">
+        <h1 class="text-5xl font-bold mb-4 animate-fade-in">
+          Hi, I'm <span class="text-primary">Sayedali Noohi</span>
+        </h1>
+        <p class="text-xl text-gray-300 animate-slide-in">
+          Master's Student in Computer Engineering | Software Developer
+        </p>
+        <div class="mt-6">
+          <a href="#projects"
+             class="bg-primary text-white px-6 py-3 rounded-lg shadow-lg text-lg hover:bg-indigo-600 transition duration-300">
+            View My Work
+          </a>
+          <a href="#contact"
+             class="ml-4 bg-gray-700 text-white px-6 py-3 rounded-lg shadow-lg text-lg hover:bg-gray-600 transition duration-300">
+            Contact Me
+          </a>
+          <a href="#about">
+            <button class="ml-4 bg-gray-700 text-white px-6 py-3 rounded-lg shadow-lg text-lg hover:bg-gray-600 transition duration-300">
+              About Me
+            </button>
+          </a>
+        </div>
+      </section>
+
+
+
+      <!-- Skills Section -->
+      <section class="py-16 px-8">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-primary">My Skills</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+            <div v-for="skill in skills" :key="skill.name" class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img :src="skill.image" :alt="skill.name" class="mx-auto w-12">
+              <p class="mt-2 text-gray-400">{{ skill.name }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-16 px-8 bg-gray-800">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-primary">My Projects</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <div v-for="project in projects" :key="project.id" class="bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <h3 class="text-xl font-semibold">{{ project.title }}</h3>
+              <p class="text-gray-400 mt-2">{{ project.description }}</p>
+              <a :href="project.link" target="_blank" class="text-primary hover:text-indigo-400 mt-4 block">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+  </template>
+
+  <script>
+  export default {
+    data() {
+      return {
+        skills: [
+          { name: "HTML", image: "/images/html.png" },
+          { name: "CSS", image: "/images/css.png" },
+          { name: "JavaScript", image: "/images/javascript.png" },
+          { name: "Laravel", image: "/images/laravel.png" }
+        ],
+        projects: [
+          { id: 1, title: "Portfolio Website", description: "Laravel + Vue website for showcasing work.", link: "#" },
+          { id: 2, title: "AI Research", description: "Study on AI for cybersecurity.", link: "#" },
+          { id: 3, title: "E-commerce App", description: "Full-stack Laravel e-commerce platform.", link: "#" }
+        ]
+      };
+    }
+  };
+  </script>
+
+  <style>
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .animate-fade-in {
+    animation: fade-in 1s ease-in-out;
+  }
+
+  @keyframes slide-in {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .animate-slide-in {
+    animation: slide-in 1s ease-in-out;
+  }
+  </style>
