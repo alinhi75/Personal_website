@@ -14,6 +14,11 @@
              class="bg-primary text-white px-6 py-3 rounded-lg shadow-lg text-lg hover:bg-indigo-600 transition duration-300">
             View My Work
           </a>
+            <a href="#skills"
+                 class="ml-4 bg-gray-700 text-white px-6 py-3 rounded-lg shadow-lg text-lg hover:bg-gray-600 transition duration-300">
+                My Skills
+                </a>
+
           <a href="#contact"
              class="ml-4 bg-gray-700 text-white px-6 py-3 rounded-lg shadow-lg text-lg hover:bg-gray-600 transition duration-300">
             Contact Me
@@ -23,23 +28,12 @@
               About Me
             </button>
           </a>
+
         </div>
       </section>
 
 
 
-      <!-- Skills Section -->
-      <section class="py-16 px-8">
-        <div class="max-w-5xl mx-auto text-center">
-          <h2 class="text-3xl font-bold text-primary">My Skills</h2>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-            <div v-for="skill in skills" :key="skill.name" class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-              <img :src="skill.image" :alt="skill.name" class="mx-auto w-12">
-              <p class="mt-2 text-gray-400">{{ skill.name }}</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- Projects Section -->
       <section id="projects" class="py-16 px-8 bg-gray-800">
