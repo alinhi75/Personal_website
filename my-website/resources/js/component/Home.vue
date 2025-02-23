@@ -31,10 +31,6 @@
 
         </div>
       </section>
-
-
-
-
       <!-- Projects Section -->
       <section id="projects" class="py-16 px-8 bg-gray-800">
         <div class="max-w-5xl mx-auto text-center">
@@ -48,8 +44,6 @@
           </div>
         </div>
       </section>
-
-
     </div>
   </template>
 
@@ -65,8 +59,11 @@
         ],
         projects: [
           { id: 1, title: "Portfolio Website", description: "Laravel + Vue website for showcasing work.", link: "#" },
-          { id: 2, title: "AI Research", description: "Study on AI for cybersecurity.", link: "#" },
-          { id: 3, title: "E-commerce App", description: "Full-stack Laravel e-commerce platform.", link: "#" }
+          { id: 2, title: "Meme Game", description: "Single-player web application inspired by the popular 'What do you meme?' board game", link: "https://github.com/alinhi75/MemeGame" },
+          { id: 3, title: "EZelectronics", description: " software application designed to help managers of electronics stores to manage their products and offer them to customers through a dedicated website", link: "https://github.com/alinhi75/EZelectronics" },
+          { id: 4, title: "Twitter Clone (Laravel)", description: "simplified clone of Twitter built using Laravel", link: "https://github.com/alinhi75/Twitter-Laravel-" },
+          { id: 5, title: "Kiruna Explorer", description: "Kiruna Explorer is an interactive platform designed to enhance exploration and navigation of the Kiruna region", link: "https://github.com/alezemelo/SE2_KirunaExplorer" },
+          { id: 6, title: "VSABT Project", description: "Internship position and co-operate for 6 month at this project", link: "https://github.com/VSABT" },
         ]
       };
     }
