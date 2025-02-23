@@ -1,14 +1,14 @@
 <template>
-    <div class="bg-gray-900 text-white min-h-screen py-16">
+    <div class="bg-gray-900 text-white py-16" data-aos="fade-up">
       <div class="max-w-4xl mx-auto px-8 text-center">
 
-        <h2 class="text-4xl font-bold text-primary">Contact Me</h2>
-        <p class="text-gray-300 mt-4">
+        <h2 class="text-5xl font-bold text-primary mb-8 tracking-wide">Contact Me</h2>
+        <p class="text-lg text-gray-300 mt-4">
           Feel free to reach out via email or send a message through the form below.
         </p>
 
         <!-- Contact Form -->
-        <form @submit.prevent="submitForm" class="mt-8 bg-gray-800 p-6 rounded-lg shadow-lg">
+        <form @submit.prevent="submitForm" class="mt-8 bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-left">
           <div class="mb-4">
             <input v-model="formData.name" type="text" placeholder="Your Name"
                    class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-primary">
@@ -33,7 +33,7 @@
         </form>
 
         <!-- Direct Contact Info -->
-        <div class="mt-8">
+        <div class="mt-8" data-aos="fade-right">
           <p class="text-lg">📧 Email:
             <a href="mailto:sayedali.noohi@studenti.polito.it" class="text-primary hover:text-indigo-400">
               sayedali.noohi@studenti.polito.it
@@ -54,26 +54,14 @@
   export default {
     data() {
       return {
-        formData: {
-          name: '',
-          email: '',
-          message: ''
-        },
+        formData: { name: '', email: '', message: '' },
         successMessage: ''
       };
     },
     methods: {
       submitForm() {
-        if (!this.formData.name || !this.formData.email || !this.formData.message) {
-          alert("Please fill in all fields.");
-          return;
-        }
-
-        // Simulate form submission
-        setTimeout(() => {
-          this.successMessage = "Message sent successfully! I'll get back to you soon.";
-          this.formData = { name: '', email: '', message: '' }; // Clear form after submission
-        }, 1000);
+        this.successMessage = "Message sent successfully!";
+        this.formData = { name: '', email: '', message: '' };
       }
     }
   };

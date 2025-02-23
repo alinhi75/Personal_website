@@ -1,12 +1,17 @@
 <template>
-    <div class="bg-gray-900 text-white min-h-screen py-16">
-      <div class="max-w-5xl mx-auto px-8">
-        <h2 class="text-4xl font-bold text-primary text-center">Education</h2>
+    <div class="bg-gray-900 text-white py-10" data-aos="fade-up">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-primary text-center mb-6">
+          Education
+        </h2>
 
-        <div class="mt-6 space-y-6">
-          <div v-for="edu in education" :key="edu.id" class="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold">{{ edu.degree }}</h3>
-            <p class="text-gray-400">{{ edu.university }} ({{ edu.year }})</p>
+        <div class="space-y-4">
+          <div v-for="(edu, index) in education" :key="edu.id"
+               class="bg-gray-800 p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300"
+               :data-aos="index % 2 === 0 ? 'fade-right' : 'fade-left'"
+               :data-aos-delay="index * 150">
+            <h3 class="text-lg font-semibold text-blue-400">{{ edu.degree }}</h3>
+            <p class="text-gray-400 text-sm">{{ edu.university }} ({{ edu.year }})</p>
           </div>
         </div>
       </div>

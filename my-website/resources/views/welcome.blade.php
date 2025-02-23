@@ -12,6 +12,7 @@
         <about id="about"></about>
         <education id="education"></education>
         <skills id="skills"></skills>
+        <projects id="projects"></projects>
         <research id="research"></research>
         <contact id="contact"></contact>
     </div>

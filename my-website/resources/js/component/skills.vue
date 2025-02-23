@@ -1,14 +1,16 @@
 <template>
-    <div class="bg-gray-900 text-white py-16">
+    <div class="bg-gray-900 text-white py-16" data-aos="fade-up">
       <div class="max-w-5xl mx-auto text-center px-8">
-        <h2 class="text-4xl font-bold text-primary">My Skills</h2>
+        <h2 class="text-5xl font-bold text-primary mb-8 tracking-wide">My Skills</h2>
         <p class="text-lg text-gray-300 mt-4">
           Below are the technologies and tools I specialize in.
         </p>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-          <div v-for="skill in skills" :key="skill.name"
-               class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-110 hover:bg-gray-700 transition-all duration-300 relative group">
+          <div v-for="(skill, index) in skills" :key="skill.name"
+               class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-110 hover:bg-gray-700 transition-all duration-300 relative group"
+               :data-aos="index % 2 === 0 ? 'fade-right' : 'fade-left'"
+               :data-aos-delay="index * 100">
             <img :src="skill.image" :alt="skill.name" class="mx-auto w-16">
             <p class="mt-2 text-gray-400">{{ skill.name }}</p>
 
