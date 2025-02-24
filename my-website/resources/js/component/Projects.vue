@@ -24,12 +24,16 @@
     data() {
       return {
         projects: [
-          { id: 1, title: "Portfolio Website", description: "Laravel + Vue website for showcasing work.", link: "#" },
-          { id: 2, title: "Meme Game", description: "Single-player web application inspired by the popular 'What do you meme?' board game", link: "https://github.com/alinhi75/MemeGame" },
-          { id: 3, title: "EZelectronics", description: "Software application designed to help managers of electronics stores to manage their products and offer them to customers through a dedicated website", link: "https://github.com/alinhi75/EZelectronics" },
-          { id: 4, title: "Twitter Clone (Laravel)", description: "Simplified clone of Twitter built using Laravel", link: "https://github.com/alinhi75/Twitter-Laravel-" },
-          { id: 5, title: "Kiruna Explorer", description: "Interactive platform designed to enhance exploration and navigation of the Kiruna region", link: "https://github.com/alezemelo/SE2_KirunaExplorer" },
-          { id: 6, title: "VSABT Project", description: "Internship position and co-operate for 6 months at this project", link: "https://github.com/VSABT" },
+          { id: 1, title: "VSABT Project", description: "Internship position and co-operate for 6 months at this project", link: "https://github.com/VSABT" },
+          { id: 2, title: "PACMAN Game With ARM ", description: "This project is a Pac-Man game developed for the LandTiger LPC1768 board. It demonstrates the use of the KEIL software debug environment to simulate and test embedded systems. The game implements core Pac-Man mechanics, including navigation through a maze, scoring, power-ups, and a countdown timer.", link: "https://github.com/alinhi75/Pac-Man-Game-ARM-" },
+          { id: 3, title: "Kiruna Explorer", description: "Interactive platform designed to enhance exploration and navigation of the Kiruna region", link: "https://github.com/alezemelo/SE2_KirunaExplorer" },
+          { id: 4, title: "EZelectronics", description: "Software application designed to help managers of electronics stores to manage their products and offer them to customers through a dedicated website", link: "https://github.com/alinhi75/EZelectronics" },
+          { id: 5, title: "Meme Game", description: "Single-player web application inspired by the popular 'What do you meme?' board game", link: "https://github.com/alinhi75/MemeGame" },
+          { id: 6, title: "Portfolio Website", description: "Laravel + Vue website for showcasing work.", link: "https://alinoohi.com" },
+          { id: 7, title: "Twitter Clone (Laravel)", description: "Simplified clone of Twitter built using Laravel", link: "https://github.com/alinhi75/Twitter-Laravel-" },
+
+
+
         ]
       };
     }
