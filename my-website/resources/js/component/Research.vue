@@ -39,9 +39,7 @@
     data() {
       return {
         research: [
-          { id: 1, title: "AI-Based Cybersecurity", description: "A research paper on AI applications in security.", link: "#" },
-          { id: 2, title: "Deep Learning for IoT Security", description: "Exploring ML techniques for IoT security.", link: "#" },
-          { id: 3, title: "Cross-Modal Perceptionist", description: "Can Face Geometry be Gleaned from Voices?", link: "#" }
+          { id: 1, title: "Cross-Modal Perceptionist", description: "Can Face Geometry be Gleaned from Voices?", link: "https://github.com/choyingw/Cross-Modal-Perceptionist" }
         ]
       };
     }
