@@ -12,6 +12,9 @@
                :data-aos-delay="index * 150">
             <h3 class="text-lg font-semibold text-blue-400">{{ edu.degree }}</h3>
             <p class="text-gray-400 text-sm">{{ edu.university }} ({{ edu.year }})</p>
+            <!-- average grade -->
+            <p class="text-gray-300 mt-2 text-sm">Average Grade: {{ edu.grade }}</p>
+
           </div>
         </div>
       </div>
@@ -23,8 +26,8 @@
     data() {
       return {
         education: [
-          { id: 1, degree: "Master’s in Computer Engineering", university: "Politecnico di Torino", year: "2023 - Present" },
-          { id: 2, degree: "Bachelor’s in Computer Engineering", university: "Shahrekord University", year: "2017 - 2022" }
+          { id: 1, degree: "Master’s in Computer Engineering", university: "Politecnico di Torino", year: "2023 - Present", grade: "92/110 (until now)"  },
+          { id: 2, degree: "Bachelor’s in Computer Engineering", university: "Shahrekord University", year: "2017 - 2022",grade: " 3 - 3.5 (GPA)" }
         ]
       };
     }
